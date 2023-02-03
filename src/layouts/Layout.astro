@@ -1,35 +1,54 @@
 ---
 export interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
 ---
 
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body class=" text-white">
+    <header class="flex justify-center border-t-8 border-[#D28B7F]">
+      <nav class="mt-2">
+        <ul class="flex gap-6">
+          <li>
+            <a
+              href="#experiencia"
+              class="hover:underline hover:text-[#D28B7F] hover:duration-700"
+              >Experiencia</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="hover:underline hover:text-[#D28B7F] hover:duration-700"
+              >Proyectos</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="hover:underline hover:text-[#D28B7F] hover:duration-700"
+              >Blog</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <slot />
+  </body>
 </html>
-<style is:global>
-	:root {
-		--accent: 124, 58, 237;
-		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background-color: #F6F6F6;
-	}
-	code {
-		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-			Bitstream Vera Sans Mono, Courier New, monospace;
-	}
+
+<style>
+  body{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1900' height='897' preserveAspectRatio='none' viewBox='0 0 1900 897'%3e%3cg clip-path='url(%26quot%3b%23SvgjsClipPath1802%26quot%3b)' fill='none'%3e%3crect width='1900' height='897' x='0' y='0' fill='%2332325d'%3e%3c/rect%3e%3ccircle r='33.205' cx='563.87' cy='738.18' fill='url(%23SvgjsLinearGradient1803)'%3e%3c/circle%3e%3ccircle r='56.13' cx='1742.22' cy='566.92' fill='url(%23SvgjsLinearGradient1804)'%3e%3c/circle%3e%3ccircle r='76.73' cx='1503.11' cy='121.05' fill='url(%23SvgjsLinearGradient1805)'%3e%3c/circle%3e%3ccircle r='60.225' cx='471.68' cy='607.68' fill='url(%23SvgjsLinearGradient1806)'%3e%3c/circle%3e%3ccircle r='72.58' cx='1031.84' cy='171.45' fill='url(%23SvgjsLinearGradient1807)'%3e%3c/circle%3e%3ccircle r='59.67' cx='1533.27' cy='410.68' fill='url(%23SvgjsLinearGradient1808)'%3e%3c/circle%3e%3ccircle r='39.21' cx='1104.91' cy='849.36' fill='url(%23SvgjsLinearGradient1809)'%3e%3c/circle%3e%3ccircle r='42.605' cx='232.86' cy='505.79' fill='url(%23SvgjsLinearGradient1810)'%3e%3c/circle%3e%3c/g%3e%3cdefs%3e%3cclipPath id='SvgjsClipPath1802'%3e%3crect width='1900' height='897' x='0' y='0'%3e%3c/rect%3e%3c/clipPath%3e%3clinearGradient x1='497.46000000000004' y1='738.18' x2='630.28' y2='738.18' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1803'%3e%3cstop stop-color='%2384b6e0' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%23464a8f' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='1629.96' y1='566.92' x2='1854.48' y2='566.92' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1804'%3e%3cstop stop-color='%23f29b7c' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%237e6286' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='1349.6499999999999' y1='121.05' x2='1656.57' y2='121.05' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1805'%3e%3cstop stop-color='%23f29b7c' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%237e6286' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='351.23' y1='607.68' x2='592.13' y2='607.68' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1806'%3e%3cstop stop-color='%23f29b7c' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%237e6286' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='886.68' y1='171.45' x2='1177' y2='171.45' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1807'%3e%3cstop stop-color='%23e298de' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%23484687' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='1413.93' y1='410.68000000000006' x2='1652.6100000000001' y2='410.68000000000006' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1808'%3e%3cstop stop-color='%2332325d' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%23424488' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='1026.49' y1='849.36' x2='1183.33' y2='849.36' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1809'%3e%3cstop stop-color='%23f29b7c' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%237e6286' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='147.65000000000003' y1='505.79' x2='318.07000000000005' y2='505.79' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1810'%3e%3cstop stop-color='%23ab3c51' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%234f4484' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+  }
 </style>

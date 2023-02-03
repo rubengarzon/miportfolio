@@ -1,9 +1,53 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import BackToTopButton from "../components/BackToTopButton.jsx";
+import Layout from "../layouts/Layout.astro";
+
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>
-		<h1>Welcome to <span class="text-2xl underline">Astro</span></h1>
-	</main>
+<Layout title="Rubén Garzón">
+  <main class="mt-10">
+    <img
+      class="rounded-full w-32 h-32 mx-auto border-8 border-white"
+      src="https://static.vecteezy.com/system/resources/previews/002/275/847/original/male-avatar-profile-icon-of-smiling-caucasian-man-vector.jpg"
+      alt="Rubén Garzón"/>
+    <h1 class="text-center text-4xl font-bold mt-2">
+      Rubén Garzón
+    </h1>
+    <h2 class="text-center text-3xl font-semibold mt-3">
+      Desarrollador Frontend
+    </h2>
+    <article class="mt-2 w-full flex place-content-center">
+      <p class="w-1/3">+1 año de experiencia como desarrollador.Técnico Superior en Desarrollo de Aplicaciones Web y Técnico Superior en Desarrollo de Aplicaciones Multiplataforma. Experiencia en desarrollo de aplicaciones web con React, Vue y Angular.</p>
+    </article>
+    <h2 class="text-4xl text-center my-10" id="experiencia">Experiencia</h2>
+    <section class="flex place-content-center">
+      <article class="rounded-2xl border-2 border-[#D28B7F] border-opacity-30 w-56 mr-4 p-4">
+        <span class="mb-10">💼 Experiencia laboral</span>
+        <div class="flex">
+          <img src="" alt="">
+          <div>
+            <h3></h3>
+            <h4></h4>
+          </div>
+          <span></span>
+        </div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas voluptate aliquam provident corrupti atque, aperiam odio porro quia at doloremque voluptatum eligendi ipsum iusto dolores eius voluptatem id dolorem quis.</p>
+        <button>Descargar CV ⬇️</button>
+      </article>
+      <article class="rounded-2xl border-2 border-[#D28B7F] border-opacity-30 w-56 p-4">
+        <span>💼 Experiencia laboral</span>
+        <div class="flex">
+          <img src="" alt="">
+          <div>
+            <h3></h3>
+            <h4></h4>
+          </div>
+          <span></span>
+        </div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas voluptate aliquam provident corrupti atque, aperiam odio porro quia at doloremque voluptatum eligendi ipsum iusto dolores eius voluptatem id dolorem quis.</p>
+        <button>Descargar CV ⬇️</button>
+      </article>
+    </section>
+    <BackToTopButton client:load/>
+  </main>
 </Layout>
