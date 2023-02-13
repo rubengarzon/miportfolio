@@ -1,0 +1,23 @@
+---
+import projects from "../json_files/projects.json";
+import Project from "../components/Project.astro";
+---
+
+<h2 class="text-5xl text-center font-bold mt-32 animate-bounce">Proyectos</h2>
+<div class="flex w-full justify-center mb-24 mt-3">
+  <span class="inline-flex h-2 w-1/3 rounded-md bg-gray-900 animate-bounce"
+  ></span>
+</div>
+<section class="flex flex-wrap justify-center gap-4" id="proyectos">
+  {
+    projects.map((project) => (
+      <Project
+        title={project.title}
+        description={project.description}
+        image={project.img}
+        link={project.href}
+        technologies={project.technologies}
+      />
+    ))
+  }
+</section>
