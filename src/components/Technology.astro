@@ -1,0 +1,19 @@
+---
+const img = Astro.props.img;
+const name = Astro.props.name;
+const description = Astro.props.description;
+---
+
+<article
+  class="bg-[#B51636] rounded-lg w-[27em] h-[15em] hover:bg-[#c42948] cursor-pointer"
+>
+  <div class="flex justify-center">
+    <img src={img} alt="react" class="w-20 h-20" />
+  </div>
+  <div class="flex flex-col justify-center">
+    <h1 class="text-2xl font-bold text-center p-2">{name}</h1>
+    <p class="text-white p-5 text-center">
+      {description}
+    </p>
+  </div>
+</article>

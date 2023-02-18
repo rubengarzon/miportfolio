@@ -15,43 +15,31 @@
     "img": "../public/peliculasapp.png",
     "title": "Peliculas App",
     "technologies": [
-      "React",
-      "ExpressJS",
-      "Mongoose",
-      "Tailwind",
-      "MongoDB"
+      "Ionic",
+      "Angular"
     ],
-    "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt lacinia, nisl nisl aliquam mauris, vitae ultricies nisl nisl vel mauris. Sed euismod, nisl vel tincidunt lacinia, nisl nisl aliquam mauris, vitae ultricies nisl nisl vel mauris.",
-    "date": "En desarrollo"
+    "description": "Aplicación web en la que se muestran las películas y series. Se puede buscar una película por su título, y añadir a favoritos."
   },
   {
     "id": 3,
     "href": "#",
-    "img": "https://logos.flamingtext.com/Name-Logos/Project-design-sketch-name.png",
-    "title": "PROJECT 3",
+    "img": "../public/mundialweb.png",
+    "title": "El Mundial",
     "technologies": [
-      "React",
-      "ExpressJS",
-      "Mongoose",
-      "Tailwind",
-      "MongoDB"
+      "Vue",
+      "NodeJS"
     ],
-    "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt lacinia, nisl nisl aliquam mauris, vitae ultricies nisl nisl vel mauris. Sed euismod, nisl vel tincidunt lacinia, nisl nisl aliquam mauris, vitae ultricies nisl nisl vel mauris.",
-    "date": "En desarrollo"
+    "description": "Página web en la que puedes consultar los partidos, la clasificación y análisis de cada selección de la copa del mundo de fútbol."
   },
   {
     "id": 4,
     "href": "#",
-    "img": "https://logos.flamingtext.com/Name-Logos/Project-design-sketch-name.png",
-    "title": "PROJECT 4",
+    "img": "../public/noticiasapp.png",
+    "title": "Noticias APP",
     "technologies": [
-      "React",
-      "ExpressJS",
-      "Mongoose",
-      "Tailwind",
-      "MongoDB"
+      "Angular",
+      "Ionic"
     ],
-    "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt lacinia, nisl nisl aliquam mauris, vitae ultricies nisl nisl vel mauris. Sed euismod, nisl vel tincidunt lacinia, nisl nisl aliquam mauris, vitae ultricies nisl nisl vel mauris.",
-    "date": "En desarrollo"
+    "description": "Aplicación en la que encontrarás las últimas noticias de todo el mundo. Se puede buscar noticias por su título y guardarlas en favoritos."
   }
 ]
