@@ -5,13 +5,14 @@ import technologies from "../json_files/technologies.json";
 ---
 
 <TitleSection title="Tecnologías" />
-<section class="flex flex-wrap justify-center gap-5 mx-56">
+<section class="flex flex-wrap justify-center gap-5 mx-56 mb-10">
   {
     technologies.map((technology) => (
       <Technology
         img={technology.img}
         name={technology.name}
         description={technology.description}
+        url={technology.url}
       />
     ))
   }
