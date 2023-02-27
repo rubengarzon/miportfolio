@@ -1,4 +1,7 @@
 ---
+import Footer from "../components/blog/FooterPost.astro";
+import Header from "../components/blog/Header.astro";
+
 const { pageTitle } = Astro.props;
 ---
 
@@ -11,7 +14,10 @@ const { pageTitle } = Astro.props;
     <title>{pageTitle}</title>
   </head>
   <body>
-    <h1>{pageTitle}</h1>
-    <slot />
+    <Header />
+    <section class="mt-20 mb-32">
+      <slot />
+    </section>
+    <Footer />
   </body>
 </html>

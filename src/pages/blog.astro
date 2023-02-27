@@ -1,8 +1,7 @@
 ---
-import BlogPost from "../components/BlogPost.astro";
+import BlogPost from "../components/blog/BlogPost.astro";
 import LayoutBlog from "../layouts/LayoutBlog.astro";
-import articles from "../json_files/articles.json";
-import Header from "../components/Header.astro";
+import Header from "../components/blog/Header.astro";
 const allPosts = await Astro.glob("../pages/posts/*.md");
 ---
 
@@ -26,9 +25,12 @@ const allPosts = await Astro.glob("../pages/posts/*.md");
     </section>
     <aside>
       <h2 class="font-bold p-2 text-lg">Cursos de Programación gratuitos</h2>
-      <a href="">
+      <a
+        href="https://rubengarzon.notion.site/APRENDE-REACT-desde-CERO-f3c25af67a824b65925a051af4babaa3"
+        target="_blank"
+      >
         <article
-          class="flex flex-col w-80 h-40 bg-[#00CBFF] rounded-md place-content-center items-center hover:scale-105"
+          class="flex flex-col w-80 h-44 bg-[#00CBFF] rounded-md place-content-center items-center hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer hover:bg-[#00B2E6]"
         >
           <img
             src="https://cdn.iconscout.com/icon/free/png-256/react-1543566-1306069.png"
