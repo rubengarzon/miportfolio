@@ -1,6 +1,7 @@
 {
   "conventionalCommits.scopes": [
     "components",
-    "components/blog"
+    "components/blog",
+    "pages/post"
   ]
 }
