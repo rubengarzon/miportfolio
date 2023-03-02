@@ -2,16 +2,16 @@
 import BlogPost from "../components/blog/BlogPost.astro";
 import LayoutBlog from "../layouts/LayoutBlog.astro";
 import Header from "../components/blog/Header.astro";
+import FooterPost from "../components/blog/FooterPost.astro";
 const allPosts = await Astro.glob("../pages/posts/*.md");
 ---
 
 <LayoutBlog title="Blog">
-  <Header />
-  <div class="flex gap-32 place-content-center mt-14">
+  <div class="flex gap-56 place-content-center mt-14">
     <section>
       <h2 class="font-bold p-2 text-lg">Últimos artículos</h2>
       {
-        allPosts.map((post) => {
+        allPosts.slice(0, 7).map((post) => {
           return (
             <BlogPost
               title={post.frontmatter.title}
@@ -22,6 +22,11 @@ const allPosts = await Astro.glob("../pages/posts/*.md");
           );
         })
       }
+      <div class="mt-4">
+        <a href="/page/2" class="text-[#09f] font-bold"
+          >artículos anteriores {">"}
+        </a>
+      </div>
     </section>
     <aside>
       <h2 class="font-bold p-2 text-lg">Cursos de Programación gratuitos</h2>
@@ -44,6 +49,50 @@ const allPosts = await Astro.glob("../pages/posts/*.md");
           >
         </article>
       </a>
+      <section class="mt-10">
+        <h2 class="font-bold text-lg">Artículos por temas</h2>
+        <div class="flex flex-wrap gap-6">
+          <a
+            href="/tags/react"
+            class="mt-2 block cursor-pointer border-2 border-white rounded-md p-2 hover:bg-[#09f] hover:text-white transition-all duration-300 ease-in-out font-bold text-[#09f] text-lg hover:border-[#09f]"
+          >
+            <img
+              src="https://cdn.iconscout.com/icon/free/png-256/react-1543566-1306069.png"
+              alt="icono de react"
+              width="30"
+              height="30"
+              class="inline-block invert"
+            />
+            React
+          </a>
+          <a
+            href="/tags/javascript"
+            class="mt-2 block cursor-pointer border-2 border-white rounded-md p-2 hover:bg-yellow-300 hover:text-black transition-all duration-300 ease-in-out font-bold text-yellow-300 text-lg hover:border-yellow-300"
+          >
+            <img
+              src="https://cdn.iconscout.com/icon/free/png-256/javascript-2752148-2284965.png"
+              alt="icono de javascript"
+              width="30"
+              height="30"
+              class="inline-block"
+            />
+            JavaScript
+          </a>
+          <a
+            href="/tags/css"
+            class="mt-2 block cursor-pointer border-2 border-white rounded-md p-2 hover:bg-[#264DE4] hover:text-white transition-all duration-300 ease-in-out font-bold text-[#264DE4] text-lg hover:border-[#264DE4]"
+          >
+            <img
+              src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"
+              alt="icono de css"
+              width="30"
+              height="30"
+              class="inline-block"
+            />
+            CSS
+          </a>
+        </div>
+      </section>
     </aside>
   </div>
 </LayoutBlog>
