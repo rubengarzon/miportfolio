@@ -17,6 +17,7 @@ tablaContenido:
     url: "#compatibilidad-con-navegadores"
   - title: "Resumen"
     url: "#resumen"
+tags: ["react"]
 ---
 
 En su papel como desarrollador de frontend, es común tener que crear componentes con estilos personalizados para cumplir con diseños creativos. Los estilos predeterminados de los elementos HTML como `<button />` o `<a />` a menudo no son los adecuados para nuestros propósitos.

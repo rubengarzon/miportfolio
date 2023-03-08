@@ -23,6 +23,7 @@ tablaContenido:
     url: "#paso-6-ejecuta-la-aplicación"
   - title: "Conclusión"
     url: "#conclusión"
+tags: ["react"]
 ---
 
 React y MongoDB son dos tecnologías potentes que se pueden usar en conjunto para crear aplicaciones web escalables y eficientes. React es una biblioteca JavaScript conocida para crear interfaces de usuario, mientras que MongoDB es una base de datos NoSQL orientada a documentos capaz de manejar grandes cantidades de datos. En este artículo, veremos cómo usar React con MongoDB.
