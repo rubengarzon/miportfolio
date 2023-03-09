@@ -1,45 +1,50 @@
 [
   {
     "id": 1,
-    "href": "#",
+    "href": "https://github.com/rubengarzon/mis-pisos",
     "img": "https://logos.flamingtext.com/Name-Logos/Project-design-sketch-name.png",
     "title": "MISPISOS",
-    "technologies": ["React", "ExpressJS", "Mongoose", "Tailwind", "MongoDB"
+    "technologies": [
+      "React",
+      "ExpressJS",
+      "Mongoose",
+      "Tailwind",
+      "MongoDB"
     ],
-    "description": "Aplicación web para la venta o alquiler de pisos. Los usuarios        registrados pueden publicar sus pisos, editarlos y eliminarlos. Los usuarios no registrados pueden ver los pisos publicados y contactar con el propietario del piso.",
-    "date": "En desarrollo"
+    "description": "Aplicación web para la venta o alquiler de pisos. Los usuarios registrados pueden publicar sus pisos, editarlos y eliminarlos. Los usuarios no registrados pueden ver los pisos publicados y contactar con el propietario del piso.",
+    "working": "En desarrollo"
   },
   {
     "id": 2,
-    "href": "#",
+    "href": "https://peliculas-app-vert.vercel.app/tabs/tab1",
     "img": "../public/peliculasapp.png",
     "title": "Peliculas App",
     "technologies": [
       "Ionic",
       "Angular"
     ],
-    "description": "Aplicación web en la que se muestran las películas y series. Se puede buscar una película por su título, y añadir a favoritos."
+    "description": "Aplicación web que he desarrollado para mostrar una amplia variedad de películas y series. Mi aplicación cuenta con una funcionalidad de búsqueda para encontrar fácilmente títulos específicos y la opción de añadirlos a una lista de favoritos."
   },
   {
     "id": 3,
-    "href": "#",
+    "href": "https://elmundial.vercel.app/",
     "img": "../public/mundialweb.png",
     "title": "El Mundial",
     "technologies": [
       "Vue",
       "NodeJS"
     ],
-    "description": "Página web en la que puedes consultar los partidos, la clasificación y análisis de cada selección de la copa del mundo de fútbol."
+    "description": "Proyecto que desarrollé de una página web dedicada a la Copa del Mundo de fútbol. En esta página web, podrás consultar información relevante sobre cada selección, como los partidos, la clasificación y un análisis detallado de su desempeño en el torneo"
   },
   {
     "id": 4,
-    "href": "#",
+    "href": "https://noticiasapp.vercel.app/tabs/tab1",
     "img": "../public/noticiasapp.png",
     "title": "Noticias APP",
     "technologies": [
       "Angular",
       "Ionic"
     ],
-    "description": "Aplicación en la que encontrarás las últimas noticias de todo el mundo. Se puede buscar noticias por su título y guardarlas en favoritos."
+    "description": "Aplicación web que he desarrollado para mantenerte al día con las últimas noticias de todo el mundo. Mi aplicación cuenta con una funcionalidad de búsqueda para encontrar fácilmente noticias por título, y la opción de guardarlas en una lista de favoritos para acceder a ellas fácilmente en el futuro."
   }
 ]

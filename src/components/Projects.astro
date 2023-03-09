@@ -5,7 +5,7 @@ import TitleSection from "../components/TitleSection.astro";
 ---
 
 <TitleSection title="Proyectos" />
-<section class="flex flex-wrap justify-center gap-4 mb-10" id="proyectos">
+<section class="flex flex-wrap justify-center gap-10 mb-10" id="proyectos">
   {
     projects.map((project) => (
       <Project
@@ -14,6 +14,7 @@ import TitleSection from "../components/TitleSection.astro";
         image={project.img}
         link={project.href}
         technologies={project.technologies}
+        working={project.working}
       />
     ))
   }

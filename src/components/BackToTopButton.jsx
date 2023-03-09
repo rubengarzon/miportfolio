@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 
 export default function BackToTopButton() {
-
   useEffect(() => {
     window.addEventListener("scroll", () => {
       const button = document.querySelector(".back-to-top-button");
@@ -23,7 +22,7 @@ export default function BackToTopButton() {
 
   return (
     <button
-      className="back-to-top-button fixed bottom-4 right-4 bg-[#dc143c] text-white rounded-full p-2 hidden"
+      className="back-to-top-button fixed bottom-4 right-4 bg-[#000000] text-white rounded-full p-2 hidden"
       onClick={scrollToTop}
     >
       <svg
