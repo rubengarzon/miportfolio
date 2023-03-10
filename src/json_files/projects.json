@@ -17,7 +17,7 @@
   {
     "id": 2,
     "href": "https://peliculas-app-vert.vercel.app/tabs/tab1",
-    "img": "../public/peliculasapp.png",
+    "img": "https://i.ibb.co/r3xsTpB/peliculasapp.png",
     "title": "Peliculas App",
     "technologies": [
       "Ionic",
@@ -28,7 +28,7 @@
   {
     "id": 3,
     "href": "https://elmundial.vercel.app/",
-    "img": "../public/mundialweb.png",
+    "img": "https://i.ibb.co/p4DcvxJ/mundialweb.png",
     "title": "El Mundial",
     "technologies": [
       "Vue",
@@ -39,7 +39,7 @@
   {
     "id": 4,
     "href": "https://noticiasapp.vercel.app/tabs/tab1",
-    "img": "../public/noticiasapp.png",
+    "img": "https://i.ibb.co/n7VkmGs/noticiasapp.png",
     "title": "Noticias APP",
     "technologies": [
       "Angular",
