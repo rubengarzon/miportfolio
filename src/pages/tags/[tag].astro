@@ -22,9 +22,26 @@ const { posts } = Astro.props;
 ---
 
 <LayoutBlog title={"Articulos sobre " + tag}>
-  <div class="flex gap-56 place-content-center mt-14">
+  <div class="flex gap-52 place-content-center mt-14">
     <section>
-      <h2 class="font-bold p-2 text-lg">Artículos sobre {tag}</h2>
+      <div class="mb-4">
+        <h2 class="font-bold text-lg">Artículos sobre {tag}</h2>
+        <p class="w-[38em] text-sm">
+          {
+            tag === "react" &&
+              "React es una biblioteca de código abierto desarrollada por Facebook para construir interfaces de usuario."
+          }
+          {
+            tag === "javascript" &&
+              "JavaScript es un lenguaje de programación muy flexible que permite a los desarrolladores crear aplicaciones web interactivas y dinámicas."
+          }
+          {
+            tag === "css" &&
+              "CSS es un lenguaje de hojas de estilo utilizado para describir la presentación de documentos HTML y XML."
+          }
+        </p>
+      </div>
+
       {
         posts.slice(0, 7).map((post) => {
           return (
@@ -37,11 +54,11 @@ const { posts } = Astro.props;
           );
         })
       }
-      <div class="mt-4">
+      <!-- <div class="mt-4">
         <a href="/page/2" class="text-[#09f] font-bold"
           >artículos anteriores {">"}
         </a>
-      </div>
+      </div> -->
     </section>
     <aside>
       <h2 class="font-bold p-2 text-lg">Cursos de Programación gratuitos</h2>
@@ -111,92 +128,3 @@ const { posts } = Astro.props;
     </aside>
   </div>
 </LayoutBlog>
-
-<!-- <div class="flex gap-56 place-content-center mt-14">
-    <section>
-      <h2 class="font-bold p-2 text-lg">Últimos artículos</h2>
-      {
-        allPosts.slice(0, 7).map((post) => {
-          return (
-            <BlogPost
-              title={post.frontmatter.title}
-              url={post.url}
-              img={post.frontmatter.image.url}
-              date={post.frontmatter.date}
-            />
-          );
-        })
-      }
-      <div class="mt-4">
-        <a href="/page/2" class="text-[#09f] font-bold"
-          >artículos anteriores {">"}
-        </a>
-      </div>
-    </section>
-    <aside>
-      <h2 class="font-bold p-2 text-lg">Cursos de Programación gratuitos</h2>
-      <a
-        href="https://rubengarzon.notion.site/APRENDE-REACT-desde-CERO-f3c25af67a824b65925a051af4babaa3"
-        target="_blank"
-      >
-        <article
-          class="flex flex-col w-80 h-44 bg-[#00CBFF] rounded-md place-content-center items-center hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer hover:bg-[#00B2E6]"
-        >
-          <img
-            src="https://cdn.iconscout.com/icon/free/png-256/react-1543566-1306069.png"
-            alt=""
-            width="100"
-            height="100"
-          />
-          <span class="text-lg font-bold">Aprende React desde Cero</span>
-          <span class="text-lg font-bold"
-            >La biblioteca de JS más demandada</span
-          >
-        </article>
-      </a>
-      <section class="mt-10">
-        <h2 class="font-bold text-lg">Artículos por temas</h2>
-        <div class="flex flex-wrap gap-6">
-          <a
-            href="/tags/react"
-            class="mt-2 block cursor-pointer border-2 border-white rounded-md p-2 hover:bg-[#09f] hover:text-white transition-all duration-300 ease-in-out font-bold text-[#09f] text-lg hover:border-[#09f]"
-          >
-            <img
-              src="https://cdn.iconscout.com/icon/free/png-256/react-1543566-1306069.png"
-              alt="icono de react"
-              width="30"
-              height="30"
-              class="inline-block invert"
-            />
-            React
-          </a>
-          <a
-            href="/tags/javascript"
-            class="mt-2 block cursor-pointer border-2 border-white rounded-md p-2 hover:bg-yellow-300 hover:text-black transition-all duration-300 ease-in-out font-bold text-yellow-300 text-lg hover:border-yellow-300"
-          >
-            <img
-              src="https://cdn.iconscout.com/icon/free/png-256/javascript-2752148-2284965.png"
-              alt="icono de javascript"
-              width="30"
-              height="30"
-              class="inline-block"
-            />
-            JavaScript
-          </a>
-          <a
-            href="/tags/css"
-            class="mt-2 block cursor-pointer border-2 border-white rounded-md p-2 hover:bg-[#264DE4] hover:text-white transition-all duration-300 ease-in-out font-bold text-[#264DE4] text-lg hover:border-[#264DE4]"
-          >
-            <img
-              src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"
-              alt="icono de css"
-              width="30"
-              height="30"
-              class="inline-block"
-            />
-            CSS
-          </a>
-        </div>
-      </section>
-    </aside>
-  </div> -->

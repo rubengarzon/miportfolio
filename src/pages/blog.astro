@@ -6,7 +6,7 @@ import FooterPost from "../components/blog/FooterPost.astro";
 const allPosts = await Astro.glob("../pages/posts/*.md");
 ---
 
-<LayoutBlog title="Blog">
+<LayoutBlog title="rubengarzon | blog de programación">
   <div class="flex gap-56 place-content-center mt-14">
     <section>
       <h2 class="font-bold p-2 text-lg">Últimos artículos</h2>
@@ -22,11 +22,15 @@ const allPosts = await Astro.glob("../pages/posts/*.md");
           );
         })
       }
-      <div class="mt-4">
-        <a href="/page/2" class="text-[#09f] font-bold"
-          >artículos anteriores {">"}
-        </a>
-      </div>
+      {
+        allPosts.length > 7 && (
+          <div class="mt-4">
+            <a href="/page/2" class="text-[#09f] font-bold">
+              artículos anteriores {">"}
+            </a>
+          </div>
+        )
+      }
     </section>
     <aside>
       <h2 class="font-bold p-2 text-lg">Cursos de Programación gratuitos</h2>
