@@ -3,6 +3,7 @@ layout: ../../layouts/MarkdownPostLayout.astro
 title: "Eliminar todo el estilo con una línea de CSS"
 date: 23 febrero 2023
 readingTime: 3 minutos de lectura
+urlPage: "https://rubengarzon.vercel.app/posts/eliminar-todo-el-estilo"
 image:
   url: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png"
   alt: "The Astro logo with the word One."

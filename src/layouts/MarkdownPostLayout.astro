@@ -1,4 +1,5 @@
 ---
+import ButtonShareTwitter from "../components/blog/ButtonShareTwitter.astro";
 import BaseLayout from "./BaseLayout.astro";
 const { frontmatter } = Astro.props;
 ---
@@ -22,10 +23,11 @@ const { frontmatter } = Astro.props;
         </div>
       </div>
       <div
-        class="prose lg:prose-xl prose-headings:text-white prose-p:text-white prose-code:text-yellow-200 prose-li:text-white prose-li:marker:text-blue-500 mt-10 max-w-3xl"
+        class="prose lg:prose-xl prose-headings:text-white prose-p:text-white prose-code:text-yellow-200 prose-li:text-white prose-li:marker:text-blue-500 mt-10 max-w-3xl prose-strong:text-white prose-p:text-justify"
       >
         <slot />
       </div>
+      <ButtonShareTwitter title={frontmatter.title} url={frontmatter.urlPage} />
     </div>
 
     <aside class="fixed right-14">

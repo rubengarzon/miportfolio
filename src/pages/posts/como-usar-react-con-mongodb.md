@@ -3,6 +3,7 @@ layout: ../../layouts/MarkdownPostLayout.astro
 title: "Cómo usar React con MongoDB"
 date: 28 febrero 2023
 readingTime: 4 minutos de lectura
+urlPage: "https://rubengarzon.vercel.app/posts/como-usar-react-con-mongodb"
 image:
   url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/800px-React.svg.png"
   alt: "Logo de React"
