@@ -1,5 +1,5 @@
 ---
-import Footer from "../components/blog/FooterPost.astro";
+import FooterPost from "../components/blog/FooterPost.astro";
 import Header from "../components/blog/Header.astro";
 
 const { pageTitle } = Astro.props;
@@ -22,6 +22,6 @@ const { pageTitle } = Astro.props;
     <section class="mt-20 mb-32">
       <slot />
     </section>
-    <!-- <Footer /> -->
+    <FooterPost />
   </body>
 </html>
