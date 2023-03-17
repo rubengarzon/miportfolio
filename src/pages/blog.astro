@@ -1,5 +1,6 @@
 ---
 import BlogPost from "../components/blog/BlogPost.astro";
+import FooterPost from "../components/blog/FooterPost.astro";
 import LayoutBlog from "../layouts/LayoutBlog.astro";
 const allPosts = await Astro.glob("../pages/posts/*.md");
 // ordenar por fecha en una copia del array
@@ -10,9 +11,7 @@ const sortedPosts = [...allPosts].sort(
 ---
 
 <LayoutBlog title="rubengarzon | blog de programación">
-  <div
-    class="flex flex-wrap gap-10 place-content-center mt-14 lg:gap-32 xl:gap-56"
-  >
+  <div class="flex flex-wrap gap-10 place-content-center mt-14 xl:gap-56">
     <section>
       <h2 class="font-bold p-2 text-lg">Últimos artículos</h2>
       {
@@ -103,5 +102,6 @@ const sortedPosts = [...allPosts].sort(
         </div>
       </section>
     </aside>
+    <FooterPost />
   </div>
 </LayoutBlog>
