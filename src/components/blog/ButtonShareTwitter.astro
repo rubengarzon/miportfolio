@@ -6,7 +6,9 @@ const text = title.replace(/\s/g, "%20");
 const urlTwitter = `https://twitter.com/intent/tweet?text=${text}&url=${url} por @rubengarzondev`;
 ---
 
-<div class="fixed right-14 bottom-10">
+<div
+  class="fixed w-full bottom-5 flex justify-center 2xl:right-14 2xl:justify-end"
+>
   <a
     href={urlTwitter}
     class="bg-white hover:bg-gray-300 text-black font-bold py-2 px-4 rounded-full text-sm flex items-center shadow-md shadow-blue-500/50"

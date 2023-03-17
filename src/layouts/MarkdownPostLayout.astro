@@ -6,15 +6,15 @@ const { frontmatter } = Astro.props;
 
 <BaseLayout pageTitle={frontmatter.title}>
   <div class="flex">
-    <div class="flex flex-col w-full items-center">
-      <div class="flex gap-2 w-[49em]">
+    <div class="flex flex-col w-full p-3 sm:items-center">
+      <div class="flex flex-wrap gap-2 justify-center lg:w-[49]">
         <img
           src={frontmatter.image.url}
           width="80"
           alt={frontmatter.image.alt}
         />
-        <div class="flex flex-col w-[620px]">
-          <h1 class="text-4xl font-bold">{frontmatter.title}</h1>
+        <div class="flex flex-col w-[620px] text-center sm:text-start">
+          <h1 class="text-3xl font-bold md:text-4xl">{frontmatter.title}</h1>
           <div>
             <span class="text-xs"
               >{frontmatter.date} · {frontmatter.readingTime}</span
@@ -30,12 +30,12 @@ const { frontmatter } = Astro.props;
       <ButtonShareTwitter title={frontmatter.title} url={frontmatter.urlPage} />
     </div>
 
-    <aside class="fixed right-14">
+    <aside class="fixed invisible right-14 2xl:visible">
       {
         frontmatter.tablaContenido && (
           <>
             <span class="text-sm">Contenido del artículo</span>
-            <ul class="mt-3 text-xs">
+            <ul class="mt-3 text-xs" id="TableOfContents-container">
               {frontmatter.tablaContenido.map((elemento: any) => {
                 return (
                   <li class="mb-3">

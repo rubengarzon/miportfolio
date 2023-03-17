@@ -22,14 +22,18 @@ const { posts } = Astro.props;
 ---
 
 <LayoutBlog title={"Articulos sobre " + tag}>
-  <div class="flex gap-52 place-content-center mt-14">
+  <div class="flex flex-wrap gap-10 place-content-center mt-14 xl:gap-40">
     <section>
       <div class="mb-4">
         <h2 class="font-bold text-lg">Artículos sobre {tag}</h2>
-        <p class="w-[38em] text-sm">
+        <p class="w-full md:w-[40em] text-sm">
           {
             tag === "react" &&
               "React es una biblioteca de código abierto desarrollada por Facebook para construir interfaces de usuario."
+          }
+          {
+            tag === "typescript" &&
+              "TypeScript es un lenguaje de programación que esencialmente es JavaScript con tipos."
           }
           <!-- {
             tag === "javascript" &&
@@ -98,6 +102,20 @@ const { posts } = Astro.props;
             React
           </a>
           <a
+            href="/tags/typescript"
+            class="mt-2 block cursor-pointer border-2 border-white rounded-md p-2 hover:bg-blue-700 hover:text-white transition-all duration-300 ease-in-out font-bold text-blue-700 text-lg hover:border-blue-700"
+          >
+            <img
+              src="https://cdn.worldvectorlogo.com/logos/typescript-2.svg"
+              alt="icono de typescript"
+              width="30"
+              height="30"
+              class="inline-block"
+            />
+            Typescript
+          </a>
+
+          <!-- <a
             href="/tags/javascript"
             class="mt-2 block cursor-pointer border-2 border-white rounded-md p-2 hover:bg-yellow-300 hover:text-black transition-all duration-300 ease-in-out font-bold text-yellow-300 text-lg hover:border-yellow-300"
           >
@@ -109,10 +127,10 @@ const { posts } = Astro.props;
               class="inline-block"
             />
             JavaScript
-          </a>
+          </a> -->
           <a
             href="/tags/css"
-            class="mt-2 block cursor-pointer border-2 border-white rounded-md p-2 hover:bg-[#264DE4] hover:text-white transition-all duration-300 ease-in-out font-bold text-[#264DE4] text-lg hover:border-[#264DE4]"
+            class="mt-2 block cursor-pointer border-2 border-white rounded-md p-2 hover:bg-blue-500 hover:text-white transition-all duration-300 ease-in-out font-bold text-blue-500 text-lg hover:border-blue-500"
           >
             <img
               src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"

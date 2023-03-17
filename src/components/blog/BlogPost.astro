@@ -6,9 +6,7 @@ const { url } = Astro.props;
 ---
 
 <a href={url}>
-  <article
-    class="flex p-2 w-[30em] items-center hover:bg-[#3c4654] hover:rounded-md"
-  >
+  <article class="flex p-2 items-center hover:bg-[#3c4654] hover:rounded-md">
     <img src={img} alt="" width="50" height="50" class="mr-5" />
     <div class="flex flex-col">
       <h3 class="font-bold text-lg">{title}</h3>
