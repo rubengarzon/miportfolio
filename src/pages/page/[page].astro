@@ -9,6 +9,7 @@ export async function getStaticPaths({ paginate }) {
 }
 const { page } = Astro.props;
 ---
+
 <LayoutBlog title="Blog">
   <div class="flex gap-56 place-content-center mt-14">
     <section>
@@ -26,8 +27,20 @@ const { page } = Astro.props;
         })
       }
       <div class="flex gap-3 mt-4">
-        {page.url.prev ? <a href={page.url.prev} class="text-[#09f] font-bold">{'<'} artículos más recientes</a> : null}
-        {page.url.next ? <a href={page.url.next} class="text-[#09f] font-bold">artículos anteriores {'>'}</a> : null}
+        {
+          page.url.prev ? (
+            <a href={page.url.prev} class="text-[#09f] font-bold">
+              {"<"} artículos más recientes
+            </a>
+          ) : null
+        }
+        {
+          page.url.next ? (
+            <a href={page.url.next} class="text-[#09f] font-bold">
+              artículos anteriores {">"}
+            </a>
+          ) : null
+        }
       </div>
     </section>
     <aside>
@@ -51,6 +64,50 @@ const { page } = Astro.props;
           >
         </article>
       </a>
+      <section class="mt-10">
+        <h2 class="font-bold text-lg">Artículos por temas</h2>
+        <div class="flex flex-wrap gap-6">
+          <a
+            href="/tags/react"
+            class="mt-2 block cursor-pointer border-2 border-white rounded-md p-2 hover:bg-[#09f] hover:text-white transition-all duration-300 ease-in-out font-bold text-[#09f] text-lg hover:border-[#09f]"
+          >
+            <img
+              src="https://cdn.iconscout.com/icon/free/png-256/react-1543566-1306069.png"
+              alt="icono de react"
+              width="30"
+              height="30"
+              class="inline-block invert"
+            />
+            React
+          </a>
+          <a
+            href="/tags/typescript"
+            class="mt-2 block cursor-pointer border-2 border-white rounded-md p-2 hover:bg-blue-700 hover:text-white transition-all duration-300 ease-in-out font-bold text-blue-700 text-lg hover:border-blue-700"
+          >
+            <img
+              src="https://cdn.worldvectorlogo.com/logos/typescript-2.svg"
+              alt="icono de typescript"
+              width="30"
+              height="30"
+              class="inline-block"
+            />
+            Typescript
+          </a>
+          <a
+            href="/tags/css"
+            class="mt-2 block cursor-pointer border-2 border-white rounded-md p-2 hover:bg-blue-500 hover:text-white transition-all duration-300 ease-in-out font-bold text-blue-500 text-lg hover:border-blue-500"
+          >
+            <img
+              src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"
+              alt="icono de css"
+              width="30"
+              height="30"
+              class="inline-block"
+            />
+            CSS
+          </a>
+        </div>
+      </section>
     </aside>
   </div>
 </LayoutBlog>
